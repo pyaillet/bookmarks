@@ -1,5 +1,10 @@
-"scripts": {
-  "start": "node server.js"
-},
-"main": "server.js"
-
+{ "name": "bookmarks",
+  "description": "backend of a social bookmark",
+  "version": "0.0.1",
+  "devDependencies": {
+  },
+  "scripts": {
+  	 "start": "node server.js"
+  },
+  "main": "server.js"
+}
