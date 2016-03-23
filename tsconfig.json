@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "system",
+    "noImplicitAny": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "experimentalDecorators":true
+  },
+  "exclude": [
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "build",
+    "test",
+    "typings/main",
+    "typings/main.d.ts"
+  ]
+}
