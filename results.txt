@@ -1,0 +1,8 @@
+
+
+  Model Opinion Tests
+    1) "before all" hook
+
+
+  0 passing (1s)
+

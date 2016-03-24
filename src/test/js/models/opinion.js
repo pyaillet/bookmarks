@@ -1,11 +1,8 @@
-/// <reference path='../../../../typings/main/ambient/chai/index.d.ts' />
-/// <amd-dependency path="chai" />
+var DB = require('../../../main/js/db');
+var chai = require('chai');
+var fixtures = require('../../fixtures/test1');
 
-import DB = require('../../../main/src/ts/db.ts');
-import chai = require('chai');
-import fixtures = require('../../fixtures/test1');
-
-import Opinion = require('../../../main/src/ts/models/opinion');
+var Opinion = require('../../../main/js/models/opinion');
 
 chai.should();
 

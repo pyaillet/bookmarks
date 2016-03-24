@@ -1,16 +1,16 @@
 /*eslint-env node */
-import DB = require('../db');
+var DB = require('../db');
 
 var COLLECTION = 'bookmarks';
 
 // Get all opinions
-export function all(cb) {
+exports.all = function(cb) {
   var db = DB.getDB();
   db.collection(COLLECTION).find().toArray(cb);
 };
 
 // Create new opinion and return its id
-export function create(url, username, note, comment, cb) {
+exports.create = function(url, username, note, comment, cb) {
   var db = DB.getDB();
   db.collection(COLLECTION).insert(
   	{url: url, username: username, note: note, comment: comment}, 
@@ -23,7 +23,7 @@ export function create(url, username, note, comment, cb) {
 
 
 // Remove an opinion
-export function remove(id, cb) {
+exports.remove = function(id, cb) {
   var db = DB.getDB();
   db.collection(COLLECTION).remove({_id:id}, /* @callback */ function(err, result) {
     cb(err);
